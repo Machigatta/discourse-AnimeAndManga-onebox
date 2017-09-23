@@ -1,7 +1,7 @@
 
 <a href="https://www.kokoro-ko.de/">![Logo](https://www.kokoro-ko.de/uploads/default/original/1X/c425edbe738ac1f92e584cfb94305d1570042f45.png)</a>
 
-# discourse-myanimelist-onebox
+# discourse-AnimeAndManga-onebox
 
 This plugin for Discourse extends Onebox to add support for properly embedding [Myanimelist.net](https://myanimelist.net/) Anime and Manga in Discourse posts. Using the base attributes:
 
