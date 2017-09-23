@@ -3,12 +3,24 @@
 
 # discourse-AnimeAndManga-onebox
 
-This plugin for Discourse extends Onebox to add support for properly embedding [Myanimelist.net](https://myanimelist.net/) Anime and Manga in Discourse posts. Using the base attributes:
+This plugin for Discourse extends Onebox to add support for properly embedding Anime- and Manga-Links in Discourse posts. Using the base attributes:
 
-- Episodes / Chapters
+#### Anime:
+- Episodes
 - Status
-- Premiered
-- Score
+- Rating
+- Release
+
+#### Manga:
+- Volumes
+- Chapters
+- Status
+- Release
+- Rating
+
+#### Supported sites:
+- [Myanimelist.net](https://myanimelist.net/) for Anime, Manga
+- [AnimeNewsNetwork](http://www.animenewsnetwork.com/) for Anime
 
 ## Installation
 
