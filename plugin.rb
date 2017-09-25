@@ -12,7 +12,7 @@ class Onebox::Engine::MyanimelistMangaOneBox
     matches_regexp REGEX
     
     def viewurl
-        "https://api.kokoro-ko.de?onebox.php"
+        "https://api.kokoro-ko.de/onebox/onebox.php"
     end
 
     def id
@@ -41,7 +41,7 @@ class Onebox::Engine::MyanimelistAnimeOneBox
     matches_regexp REGEX
     
     def viewurl
-        "https://api.kokoro-ko.de?onebox.php"
+        "https://api.kokoro-ko.de/onebox/onebox.php"
     end
 
     def id
@@ -70,7 +70,7 @@ class Onebox::Engine::AnimeNewsNetworkOneBox
     matches_regexp REGEX
     
     def viewurl
-        "https://api.kokoro-ko.de?onebox.php"
+        "https://api.kokoro-ko.de/onebox/onebox.php"
     end
 
     def id
