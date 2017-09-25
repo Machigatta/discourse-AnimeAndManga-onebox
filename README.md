@@ -33,7 +33,7 @@ hooks:
         cd: $home/plugins
         cmd:
           - mkdir -p plugins
-          - git clone https://github.com/Machigatta/discourse-myanimelist-onebox
+          - git clone https://github.com/Machigatta/discourse-AnimeAndManga-onebox.git
 ```
 
 Rebuild the container:
