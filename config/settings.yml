@@ -1,0 +1,4 @@
+plugins:
+  kokoro_box_enabled:
+    default: true
+    client: true

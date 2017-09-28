@@ -1,0 +1,3 @@
+de:
+  site_settings:
+    kokoro_box_enabled: "Aktiviere das Kokoro-Box-Plugin. Nach einer Änderung hier, müssen alle Posts rebaked werden: \"rake posts:rebake\"."

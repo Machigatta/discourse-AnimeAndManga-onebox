@@ -1,7 +1,7 @@
 
 <a href="https://www.kokoro-ko.de/">![Logo](https://www.kokoro-ko.de/uploads/default/original/1X/c425edbe738ac1f92e584cfb94305d1570042f45.png)</a>
 
-# discourse-AnimeAndManga-onebox
+# discourse-kokoro-box
 
 This plugin for Discourse extends Onebox to add support for properly embedding Anime- and Manga-Links in Discourse posts. Using the base attributes:
 
@@ -33,7 +33,7 @@ hooks:
         cd: $home/plugins
         cmd:
           - mkdir -p plugins
-          - git clone https://github.com/Machigatta/discourse-AnimeAndManga-onebox.git
+          - git clone https://github.com/Machigatta/discourse-kokoro-box.git
 ```
 
 Rebuild the container:
