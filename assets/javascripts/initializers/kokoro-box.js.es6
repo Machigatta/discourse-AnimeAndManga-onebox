@@ -1,8 +1,8 @@
 import { withPluginApi, decorateCooked } from 'discourse/lib/plugin-api';
-import { onPageChange } from 'discourse/lib/page-tracker';
+// import { onPageChange } from 'discourse/lib/page-tracker';
 // import { addPostClassesCallback } from 'discourse/widgets/post';
 // import { addPostTransformCallback } from 'discourse/widgets/post-stream';
-import { addDecorator } from 'discourse/widgets/post-cooked';
+// import { addDecorator } from 'discourse/widgets/post-cooked';
 
 function toBox($elem) {
     if ($elem == undefined || $elem == null || !$($elem).is("a")) { return; }

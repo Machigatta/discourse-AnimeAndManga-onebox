@@ -3,7 +3,7 @@
 
 # discourse-kokoro-box
 
-This plugin for Discourse extends Onebox to add support for properly embedding Anime- and Manga-Links in Discourse posts. Using the base attributes:
+This plugin for Discourse uses the discourse-api to decorate the cooked-posts. Primary usage is for properly embedding Anime- and Manga-Links in Discourse posts and parsing them into better looking iframes. Using these base attributes:
 
 #### Anime:
 - Episodes
@@ -41,14 +41,6 @@ Rebuild the container:
 ```sh
 cd /var/discourse
 ./launcher rebuild app
-```
-
-For the plugin to apply retroactively, you'll need to rebake old posts:
-
-```sh
-cd /var/discourse
-./launcher enter app
-rake posts:rebake
 ```
 
 ## License
