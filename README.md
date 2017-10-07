@@ -20,7 +20,7 @@ This plugin for Discourse uses the discourse-api to decorate the cooked-posts. P
 
 #### Supported sites:
 - [Myanimelist.net](https://myanimelist.net/) for Anime, Manga
-- [AnimeNewsNetwork](http://www.animenewsnetwork.com/) for Anime
+- [AnimeNewsNetwork](http://www.animenewsnetwork.com/) for Anime, Manga
 
 ## Installation
 
