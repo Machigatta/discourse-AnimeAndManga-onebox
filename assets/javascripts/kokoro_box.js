@@ -9,18 +9,17 @@
     };
 
     function applyBox($el, $options) {
-        console.log($options);
         var href = $($el).attr("href");
-        if (DEFAULTS.mal_anime.test(href) && $options.site_settings.kokoro_box_mal_anime_enabled) {
+        if (DEFAULTS.mal_anime.test(href) && $options.kokoro_box_mal_anime_enabled) {
             var excP = DEFAULTS.mal_anime.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=mal&type=anime&name=' + excP[2] + '&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
-        } else if (DEFAULTS.mal_manga.test(href) && $options.site_settings.kokoro_box_mal_manga_enabled) {
+        } else if (DEFAULTS.mal_manga.test(href) && $options.kokoro_box_mal_manga_enabled) {
             var excP = DEFAULTS.mal_manga.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=mal&type=manga&name=' + excP[2] + '&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
-        } else if (DEFAULTS.ann_anime.test(href) && $options.site_settings.kokoro_box_ann_anime_enabled) {
+        } else if (DEFAULTS.ann_anime.test(href) && $options.kokoro_box_ann_anime_enabled) {
             var excP = DEFAULTS.ann_anime.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=ann&type=anime&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
-        } else if (DEFAULTS.ann_manga.test(href) && $options.site_settings.kokoro_box_ann_manga_enabled) {
+        } else if (DEFAULTS.ann_manga.test(href) && $options.kokoro_box_ann_manga_enabled) {
             var excP = DEFAULTS.ann_manga.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=ann&type=manga&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
         }
