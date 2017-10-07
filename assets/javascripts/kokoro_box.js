@@ -9,6 +9,7 @@
     };
 
     function applyBox($el, $options) {
+        console.log($options);
         var href = $($el).attr("href");
         if (DEFAULTS.mal_anime.test(href) && $options.site_settings.kokoro_box_mal_anime_enabled) {
             var excP = DEFAULTS.mal_anime.exec(href);
