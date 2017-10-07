@@ -1,3 +1,7 @@
 de:
   site_settings:
-    kokoro_box_enabled: "Aktiviere das Kokoro-Box-Plugin. Nach einer Änderung hier, müssen alle Posts rebaked werden: \"rake posts:rebake\"."
+    kokoro_box_enabled: "Aktiviere das Kokoro-Box-Plugin."
+    kokoro_box_mal_anime_enabled: "Aktiviere die Box für Myanimelist-Anime"
+    kokoro_box_mal_manga_enabled: "Aktiviere die Box für Myanimelist-Manga"
+    kokoro_box_ann_anime_enabled: "Aktiviere die Box für Animenewsnetwork-Anime"
+    kokoro_box_ann_manga_enabled: "Aktiviere die Box für Animenewsnetwork-Manga"

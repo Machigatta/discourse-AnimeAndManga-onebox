@@ -1,4 +1,4 @@
-# name: Discourse Myanimelist | Animenewsnetwork iframe
+# name: Kokoro-Box
 # about: Adds support for properly embedding Anime-View and Manga-View within Discourse.
 # version: 1.0
 # authors: Armin Seidling

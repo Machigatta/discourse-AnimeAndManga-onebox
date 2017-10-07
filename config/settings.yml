@@ -2,3 +2,15 @@ plugins:
   kokoro_box_enabled:
     default: true
     client: true
+  kokoro_box_mal_anime_enabled:
+    default: true
+    client: true
+  kokoro_box_mal_manga_enabled:
+    default: true
+    client: true
+  kokoro_box_ann_anime_enabled:
+    default: true
+    client: true
+  kokoro_box_ann_manga_enabled:
+    default: true
+    client: true

@@ -7,15 +7,15 @@
         ann_anime: new RegExp(/^http?:\/\/(?:www\.)?animenewsnetwork\.com\/encyclopedia\/anime.php\?id=([a-zA-Z0-9_]{1,25})\S*$/)
     };
 
-    function applyBox($el) {
+    function applyBox($el, $options) {
         var href = $($el).attr("href");
-        if (DEFAULTS.mal_anime.test(href)) {
+        if (DEFAULTS.mal_anime.test(href) && $options.site_settings.kokoro_box_mal_anime_enabled) {
             var excP = DEFAULTS.mal_anime.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=mal&type=anime&name=' + excP[2] + '&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
-        } else if (DEFAULTS.mal_manga.test(href)) {
+        } else if (DEFAULTS.mal_manga.test(href) && $options.site_settings.kokoro_box_mal_manga_enabled) {
             var excP = DEFAULTS.mal_manga.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=mal&type=manga&name=' + excP[2] + '&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
-        } else if (DEFAULTS.ann_anime.test(href)) {
+        } else if (DEFAULTS.ann_anime.test(href) && $options.site_settings.kokoro_box_ann_anime_enabled) {
             var excP = DEFAULTS.ann_anime.exec(href);
             $($el).closest(".onebox").replaceWith('<iframe src="' + DEFAULTS.viewUrl + '?api=ann&id=' + excP[1] + '" frameborder="0" width="100%" height="255"></iframe>');
         }
