@@ -3,7 +3,7 @@
 
 # discourse-kokoro-box
 
-This plugin for Discourse uses the discourse-api to decorate the cooked-posts. Primary usage is for properly embedding Anime- and Manga-Links in Discourse posts and parsing them into better looking iframes. Using these base attributes:
+This plugin for Discourse uses the discourse-api to decorate the cooked-posts. Primary usage is for properly embedding Anime- and Manga-Links in Discourse posts and parsing them into better looking iframes. Using these base attributes (Caution: Some attributes might not be filled for every site-type):
 
 #### Anime:
 - Episodes
