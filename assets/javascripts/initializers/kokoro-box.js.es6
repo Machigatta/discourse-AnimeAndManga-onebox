@@ -1,15 +1,15 @@
 import { withPluginApi, decorateCooked } from 'discourse/lib/plugin-api';
 
-function toBox($elem) {
+function toBox($elem, settings) {
     if ($elem == undefined || $elem == null || !$($elem).is("a")) { return; }
     $($elem).each(function(i, el) {
-        $(el).linkToKokoroBox();
+        $(el).linkToKokoroBox(settings);
     });
 }
 
 function initializeBox(api) {
-    console.log(siteSettings);
-    api.decorateCooked(t => toBox($(t).find("a")));
+    var settings = api.container.lookup('site-settings:main');
+    api.decorateCooked(t => toBox($(t).find("a"), settings));
 
 }
 
