@@ -1,6 +1,6 @@
 # name: Kokoro-Box
 # about: Adds support for properly embedding Anime-View and Manga-View within Discourse.
-# version: 1.0
+# version: 1.1
 # authors: Armin Seidling
 # url: https://github.com/Machigatta/discourse-kokoro-box
 
